@@ -9,7 +9,7 @@ require('dotenv').config({
 })
 const userRoutes        = require('./routes/usuarios')
 const authRoutes        = require('./routes/auth')
-const projectsRoutes    = require('./routes/proyectos')
+const trabajosRoutes    = require('./routes/trabajos')
 // 2. MIDDLEWARES
     // a. Conectarnos a la BD
     conectarDB()
@@ -22,8 +22,8 @@ const projectsRoutes    = require('./routes/proyectos')
     app.use('/api/usuarios', userRoutes)    
     // B. Autenticación
     app.use('/api/auth', authRoutes)
-    // C. Proyectos
-    app.use('/api/proyectos', projectsRoutes)
+    // C. Trabajos
+    app.use('/api/trabajos', trabajosRoutes)
     // RUTA DE PRUEBA
     app.get("/", (req, res) => {
         res.send("Hola mundo")

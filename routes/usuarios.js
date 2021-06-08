@@ -14,10 +14,10 @@ router.post("/",
         check("password", "El password debe tener mínimo de 6 caracteres").isLength({min:6})
     ]
     ,usuarioController.crearUsuario)
-// localhost:4000/api/usuarios/mike
-router.get('/mike', (req,res) => {
-    res.json({
-        ejemplo: "123"
-    })
-})
+// // localhost:4000/api/usuarios/mike
+// router.get('/mike', (req,res) => {
+//     res.json({
+//         ejemplo: "123"
+//     })
+// })
 module.exports = router
