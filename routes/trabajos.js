@@ -47,7 +47,7 @@ router.get("/",
 
 //-----------------------
 // MOSTRAR TODOS LOS TRABAJOS DE LA PLATAFORMA
-// router.get("/",
+// router.get("/trabaja",
 //     auth,
 //     trabajoController.todosLostrabajos
 // )

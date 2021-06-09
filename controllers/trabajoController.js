@@ -74,13 +74,13 @@ exports.actualizarTrabajo = async (req, res) => {
     }
 
     // EXTRAER LA INFORMACIÓN DEL TRABAJO
-    const { nombre } = req.body
+    const { titulo } = req.body
 
     // CREAR UN NUEVO TRABAJO VACÍO DONDE LE INSERTAREMOS LA NUEVA INFORMACIÓN
     const nuevoTrabajo = {}
 
     // AGREGAR EL NOMBRE AL NUEVOTRABAJO (OBJETO)
-    nuevoTrabajo.nombre = nombre
+    nuevoTrabajo.titulo = titulo
 
 
     // AGREGAR FECHA DE ACTUALIZACIÓN
